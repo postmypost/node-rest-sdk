@@ -1,6 +1,6 @@
 {
   "name": "@postmypost/node-rest-sdk",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "OpenAPI-based SDK for integrating with Postmypost REST API. Official, secure, and fully compliant integrations for social media automation, content scheduling, analytics, and more.",
   "keywords": [
     "postmypost",

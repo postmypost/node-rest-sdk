@@ -24,7 +24,7 @@ To use the Postmypost API, you need an **access token** (API key), which is used
 Install the SDK via npm:
 
 ```bash
-npm install @postmypost/rest-sdk --save
+npm install @postmypost/node-rest-sdk --save
 ```
 
 ## Usage Example
