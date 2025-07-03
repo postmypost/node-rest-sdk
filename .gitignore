@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+lib/
+.idea/
+.vscode/
+*.log
+*.tsbuildinfo
+.DS_Store
+.env
+.env.*
+coverage/
+Thumbs.db
+npm-debug.log*
+*.test.ts.snap

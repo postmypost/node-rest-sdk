@@ -1,0 +1,55 @@
+{
+  "name": "@postmypost/node-rest-sdk",
+  "version": "1.0.5",
+  "description": "OpenAPI-based SDK for integrating with Postmypost REST API. Official, secure, and fully compliant integrations for social media automation, content scheduling, analytics, and more.",
+  "keywords": [
+    "postmypost",
+    "smm",
+    "social-media",
+    "api",
+    "openapi",
+    "sdk",
+    "rest",
+    "integration",
+    "automation",
+    "instagram",
+    "facebook",
+    "telegram",
+    "vkontakte",
+    "tiktok",
+    "axios",
+    "typescript",
+    "openapi-client",
+    "openapi-generator"
+  ],
+  "homepage": "https://postmypost.io",
+  "license": "MIT",
+  "author": {
+    "name": "Postmypost Team",
+    "email": "support@postmypost.io",
+    "url": "https://postmypost.io"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/postmypost/node-rest-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/postmypost/node-rest-sdk/issues",
+    "email": "support@postmypost.io"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "format": "prettier --write \"src/**/*.ts\" \"examples/**/*.ts\""
+  },
+  "dependencies": {
+    "axios": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.0.0"
+  }
+}
