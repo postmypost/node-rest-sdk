@@ -1,0 +1,70 @@
+# ProjectsApi
+
+All URIs are relative to *https://api.postmypost.io/v4.1*
+
+|Method | HTTP request | Description|
+|------------- | ------------- | -------------|
+|[**getProjects**](#getprojects) | **GET** /projects | Get list of projects|
+
+# **getProjects**
+> ProjectsResponse getProjects()
+
+Retrieve a list of all projects available for your account.
+
+### Example
+
+```typescript
+import {
+    ProjectsApi,
+    Configuration
+} from '@postmypost/rest-sdk';
+
+const configuration = new Configuration();
+const apiInstance = new ProjectsApi(configuration);
+
+let sort: string; //List sorting parameter. Format: `sort=field` — ascending by field, `sort=-field` — descending by field. Multiple fields can be specified separated by a comma: `sort=field,-another_field`.  (optional) (default to undefined)
+let page: number; //Page number (starts from 1). (optional) (default to 1)
+let perPage: number; //Number of items per page (maximum 50). (optional) (default to 20)
+
+const { status, data } = await apiInstance.getProjects(
+    sort,
+    page,
+    perPage
+);
+```
+
+### Parameters
+
+|Name | Type | Description  | Notes|
+|------------- | ------------- | ------------- | -------------|
+| **sort** | [**string**] | List sorting parameter. Format: &#x60;sort&#x3D;field&#x60; — ascending by field, &#x60;sort&#x3D;-field&#x60; — descending by field. Multiple fields can be specified separated by a comma: &#x60;sort&#x3D;field,-another_field&#x60;.  | (optional) defaults to undefined|
+| **page** | [**number**] | Page number (starts from 1). | (optional) defaults to 1|
+| **perPage** | [**number**] | Number of items per page (maximum 50). | (optional) defaults to 20|
+
+
+### Return type
+
+**ProjectsResponse**
+
+### Authorization
+
+[BearerAuth](../README.md#BearerAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+|**200** | List of projects |  -  |
+|**400** | Bad request |  -  |
+|**401** | Unauthorized |  -  |
+|**403** | Forbidden |  -  |
+|**404** | Not found |  -  |
+|**422** | Unprocessable Entity |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

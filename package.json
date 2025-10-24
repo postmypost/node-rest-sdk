@@ -1,7 +1,12 @@
 {
-  "name": "@postmypost/node-rest-sdk",
-  "version": "1.0.6",
-  "description": "OpenAPI-based SDK for integrating with Postmypost REST API. Official, secure, and fully compliant integrations for social media automation, content scheduling, analytics, and more.",
+  "name": "@postmypost/rest-sdk",
+  "version": "1.0.7",
+  "description": "OpenAPI client for @postmypost/rest-sdk",
+  "author": "OpenAPI-Generator Contributors",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GIT_USER_ID/GIT_REPO_ID.git"
+  },
   "keywords": [
     "postmypost",
     "smm",
@@ -20,7 +25,8 @@
     "axios",
     "typescript",
     "openapi-client",
-    "openapi-generator"
+    "openapi-generator",
+    "@postmypost/rest-sdk"
   ],
   "homepage": "https://postmypost.io",
   "license": "MIT",
@@ -49,7 +55,6 @@
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
-    "prettier": "^3.6.2",
-    "typescript": "^5.0.0"
+    "typescript": "^4.0 || ^5.0"
   }
 }
