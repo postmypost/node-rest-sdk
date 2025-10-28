@@ -95,7 +95,7 @@ let projectId: number; //Project ID (default to undefined)
 let accountId: string; //Account ID (default to undefined)
 let dateFrom: string; //Start date of the period (YYYY-MM-DD) (default to undefined)
 let dateTo: string; //End date of the period (YYYY-MM-DD) (default to undefined)
-let type: string; //Publication Type (optional) (default to undefined)
+let type: 1 | 3 | 4; //Publication Type: 1 — post, 3 — story, 4 — reels/shorts  (optional) (default to undefined)
 let sort: string; //List sorting parameter. Format: `sort=field` — ascending by field, `sort=-field` — descending by field. Multiple fields can be specified separated by a comma: `sort=field,-another_field`.  (optional) (default to undefined)
 let page: number; //Page number (starts from 1). (optional) (default to 1)
 let perPage: number; //Number of items per page (maximum 50). (optional) (default to 20)
@@ -120,7 +120,7 @@ const { status, data } = await apiInstance.getAnalyticsPublications(
 | **accountId** | [**string**] | Account ID | defaults to undefined|
 | **dateFrom** | [**string**] | Start date of the period (YYYY-MM-DD) | defaults to undefined|
 | **dateTo** | [**string**] | End date of the period (YYYY-MM-DD) | defaults to undefined|
-| **type** | [**string**] | Publication Type | (optional) defaults to undefined|
+| **type** | [**1 | 3 | 4**]**Array<1 &#124; 3 &#124; 4>** | Publication Type: 1 — post, 3 — story, 4 — reels/shorts  | (optional) defaults to undefined|
 | **sort** | [**string**] | List sorting parameter. Format: &#x60;sort&#x3D;field&#x60; — ascending by field, &#x60;sort&#x3D;-field&#x60; — descending by field. Multiple fields can be specified separated by a comma: &#x60;sort&#x3D;field,-another_field&#x60;.  | (optional) defaults to undefined|
 | **page** | [**number**] | Page number (starts from 1). | (optional) defaults to 1|
 | **perPage** | [**number**] | Number of items per page (maximum 50). | (optional) defaults to 20|
